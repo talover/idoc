@@ -1,4 +1,5 @@
 @import "scroll.css";
+@import "jquery-ui-1.10.3.custom.css";
 html,
 button,
 input,
@@ -9,6 +10,7 @@ textarea {
 html {
   width: 100%;
   height: 100%;
+  min-height: 500px;
 }
 body {
   font-size: 11px;
@@ -62,6 +64,121 @@ a {
   -webkit-box-shadow: 0px 5px 15px rgba(50,50,50,0.75);
   -moz-box-shadow: 0px 5px 15px rgba(50,50,50,0.75);
   box-shadow: 0px 5px 15px rgba(50,50,50,0.75);
+}
+.sprite {
+  background-image: url(images/spritesheet.png);
+  background-repeat: no-repeat;
+  display: block;
+}
+.sprite.sprite-affilirovannie_lica_40_40 {
+  background-position: -5px -5px;
+  width: 40px;
+  height: 40px;
+}
+.sprite.sprite-akcioneri_40_40 {
+  background-position: -55px -5px;
+  width: 40px;
+  height: 40px;
+}
+.sprite.sprite-birji_40_40 {
+  background-position: -105px -5px;
+  width: 40px;
+  height: 40px;
+}
+.sprite.sprite-cennie_bumagi_40_40 {
+  background-position: -155px -5px;
+  width: 40px;
+  height: 40px;
+}
+.sprite.sprite-chlenstvo_v_dr_organizaciax_40_40 {
+  background-position: -5px -55px;
+  width: 40px;
+  height: 40px;
+}
+.sprite.sprite-control_40_40 {
+  background-position: -55px -55px;
+  width: 40px;
+  height: 40px;
+}
+.sprite.sprite-delov_perepiska_40_40 {
+  background-position: -105px -55px;
+  width: 40px;
+  height: 40px;
+}
+.sprite.sprite-documenti_40_40 {
+  background-position: -155px -55px;
+  width: 40px;
+  height: 40px;
+}
+.sprite.sprite-golosovanie_40_40 {
+  background-position: -5px -105px;
+  width: 40px;
+  height: 40px;
+}
+.sprite.sprite-holdingovoe_upravlenie_40_40 {
+  background-position: -55px -105px;
+  width: 40px;
+  height: 40px;
+}
+.sprite.sprite-iniciirovat_KP_40_40 {
+  background-position: -105px -105px;
+  width: 40px;
+  height: 40px;
+}
+.sprite.sprite-investicionnay_deyatelnost_40_40 {
+  background-position: -155px -105px;
+  width: 40px;
+  height: 40px;
+}
+.sprite.sprite-korporativnie_proceduri_40_40 {
+  background-position: -5px -155px;
+  width: 40px;
+  height: 40px;
+}
+.sprite.sprite-na_podpis_40_40 {
+  background-position: -55px -155px;
+  width: 40px;
+  height: 40px;
+}
+.sprite.sprite-portfel_40_40 {
+  background-position: -105px -155px;
+  width: 40px;
+  height: 40px;
+}
+.sprite.sprite-prava_akcionerov_40_40 {
+  background-position: -155px -155px;
+  width: 40px;
+  height: 40px;
+}
+.sprite.sprite-struktura_companii_40_40 {
+  background-position: -205px -5px;
+  width: 40px;
+  height: 40px;
+}
+.sprite.sprite-sudebnie_iski_40_40 {
+  background-position: -205px -55px;
+  width: 40px;
+  height: 40px;
+}
+.sprite.sprite-tretii_lica_40_40 {
+  background-position: -205px -105px;
+  width: 40px;
+  height: 40px;
+}
+.sprite.sprite-uchastie_i_upravlenie_dr_ur_licami_40_40 {
+  background-position: -205px -155px;
+  width: 40px;
+  height: 40px;
+}
+.sprite.sprite-upravlenie_fondami_40_40 {
+  background-position: -5px -205px;
+  width: 40px;
+  height: 40px;
+}
+.sprite.sprite-zadania_40_40 {
+  background-position: -55px -205px;
+  width: 40px;
+  height: 40px;
 }
 #main {
   position: relative;
@@ -259,8 +376,9 @@ a {
   width: auto;
   height: 100%;
   margin-left: 90px;
-  margin-right: 200px;
+  margin-right: 260px;
   position: relative;
+  overflow: hidden;
 }
 #main .content_container .content > div {
   -webkit-box-shadow: 0px 5px 15px rgba(50,50,50,0.75);
@@ -369,6 +487,110 @@ a {
   margin-left: 5px;
   color: #e77817;
 }
+#main .right_menu {
+  position: absolute;
+  width: 270px;
+  height: 100%;
+  top: 0;
+  right: 0px;
+  overflow: hidden;
+  display: block;
+}
+#main .right_menu .turn_off {
+  position: absolute;
+  z-index: 102;
+  bottom: 0;
+  right: 0;
+}
+#main .right_menu #tabs {
+  height: 100%;
+  position: relative;
+}
+#main .right_menu #tabs .list_tab {
+  position: absolute;
+  top: 20px;
+  left: 7px;
+}
+#main .right_menu #tabs .list_tab li {
+  margin-bottom: 10px;
+  z-index: 99;
+}
+#main .right_menu #tabs .list_tab li a {
+  display: block;
+  width: 33px;
+  outline: 0;
+  background-color: #e8e8e8;
+  border-bottom: 1px solid #b8a493;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  height: 130px;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+}
+#main .right_menu #tabs .list_tab li.active {
+  z-index: 10100;
+  position: relative;
+}
+#main .right_menu #tabs .list_tab li.active a {
+  background-color: #fff;
+  -webkit-box-shadow: -3px 4px 5px rgba(50,50,50,0.3);
+  -moz-box-shadow: -3px 4px 5px rgba(50,50,50,0.3);
+  box-shadow: -3px 4px 5px rgba(50,50,50,0.3);
+  border-bottom: 0;
+}
+#main .right_menu #tabs .list_tab li:first-child a {
+  background-image: url(images/calendar.png);
+}
+#main .right_menu #tabs .list_tab li:first-child + * a {
+  background-image: url(images/advice.png);
+}
+#main .right_menu #tabs .list_tab li:first-child + * + * a {
+  height: 80px;
+  background-image: url(images/chat.png);
+  background-position: center 35px;
+  position: relative;
+}
+#main .right_menu #tabs .list_tab li:first-child + * + * a span {
+  position: absolute;
+  width: 20px;
+  height: 17px;
+  line-height: 17px;
+  background-color: #ce4240;
+  color: #fff;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 10px;
+  text-align: center;
+  font-weight: bold;
+  -moz-transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  writing-mode: tb-rl;
+  border-radius: 2px;
+  border-left: 1px solid #a41c1b;
+  border-top: 1px solid #c23a39;
+  border-bottom: 1px solid #c23a39;
+}
+#main .right_menu #tabs .tabs-panel {
+  width: 230px;
+  height: 100%;
+  z-index: 100;
+  position: relative;
+  background-color: #fff;
+  overflow: hidden;
+  display: none;
+  float: right;
+}
+#main .right_menu #tabs .tabs-panel.active {
+  display: block;
+}
+#main .right_menu #tabs .tabs-panel.shadow_tab {
+  -webkit-box-shadow: 0px 5px 15px rgba(50,50,50,0.75);
+  -moz-box-shadow: 0px 5px 15px rgba(50,50,50,0.75);
+  box-shadow: 0px 5px 15px rgba(50,50,50,0.75);
+}
 .table_container .jspPane {
   width: 100% !important;
 }
@@ -382,15 +604,6 @@ a {
   width: 20px;
   border: 0;
   position: relative;
-}
-.table_container table .blank div {
-  position: absolute;
-  width: 10px;
-  height: 100%;
-  background-color: #d34a48;
-  top: 0;
-  left: 0;
-  display: none;
 }
 .table_container table .col_1 {
   width: 40px;
@@ -407,22 +620,16 @@ a {
 .table_container table .col_5 {
   width: 15%;
 }
-.table_container table td {
-  padding: 15px 0;
-  border-bottom: 1px solid #dee4ea;
-}
-.table_container table td a {
-  font-weight: bold;
-}
-.table_container table td a:hover {
-  text-decoration: none;
-}
 .table_container table thead tr {
   font-weight: bold;
 }
 .table_container table thead tr th {
-  padding: 15px 0;
+  padding: 20px 0;
   border-bottom: 1px solid #366da3;
+}
+.table_container table thead tr th:first-child {
+  width: 20px;
+  border: 0;
 }
 .table_container table thead tr th a {
   color: #528fcc;
@@ -432,8 +639,121 @@ a {
 .table_container table thead tr th a:hover {
   border: 0;
 }
-.table_container table tbody tr:hover .blank div {
-  display: block;
+.table_container table tbody tr:hover td:first-child {
+  background-color: #d34a48;
+}
+.table_container table tbody tr td {
+  padding: 20px 0;
+  border-bottom: 1px solid #dee4ea;
+}
+.table_container table tbody tr td:first-child,
+.table_container table tbody tr td:first-child + * {
+  width: 10px;
+  border: 0;
+}
+.table_container table tbody tr td a {
+  font-weight: bold;
+}
+.table_container table tbody tr td a:hover {
+  text-decoration: none;
+}
+.hasDatepicker .ui-icon {
+  width: 16px;
+  height: 16px;
+}
+.hasDatepicker .ui-datepicker .ui-datepicker-prev,
+.hasDatepicker .ui-datepicker .ui-datepicker-next {
+  width: 20px;
+  height: 20px;
+  top: 17px;
+  cursor: pointer;
+}
+.hasDatepicker .ui-datepicker .ui-datepicker-prev {
+  left: 10px;
+}
+.hasDatepicker .ui-datepicker .ui-datepicker-next {
+  right: 10px;
+}
+#calendar_big {
+  background: url(images/cal_bot.png) no-repeat 2px bottom;
+  padding: 0 0 5px 0;
+}
+#calendar_big .ui-datepicker {
+  width: 228px;
+  margin: 49px 10px 0 2px;
+  padding: 0;
+  background: none;
+}
+#calendar_big .ui-datepicker-header {
+  background: url(images/cal_top.png) no-repeat 0px 0;
+  padding: 18px 10px 15px 10px;
+  border: none;
+  margin: -49px 0 0 0;
+}
+#calendar_big .ui-datepicker-title {
+  color: #8595a6;
+  font: bold 14px Arial, Helvetica, sans-serif;
+  text-shadow: 0px 1px 1px #fff;
+}
+#calendar_big .ui-datepicker-calendar {
+  margin: 0 0 0 8px;
+  padding: 0;
+  width: 211px;
+}
+#calendar_big .ui-datepicker-inline.ui-datepicker.ui-widget.ui-widget-content {
+  background: url(images/cal_fon.png) repeat-y 0 0;
+}
+#calendar_big .ui-datepicker-calendar .ui-state-default {
+  background: none;
+}
+#calendar_big .ui-datepicker td {
+  padding: 0;
+}
+#calendar_big a {
+  border: none;
+  color: #8595a6;
+  font: bold 13px/15px Arial, Helvetica, sans-serif;
+  padding: 7px 0 7px 0;
+}
+#calendar_big .ui-datepicker td {
+  border: 1px solid #d6dce3;
+  border-bottom: none;
+  border-left: none;
+}
+#calendar_big .ui-datepicker td:first-child {
+  border-left: 1px solid #d6dce3;
+}
+#calendar_big .ui-datepicker th {
+  color: #475666;
+  font: normal 8px Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  padding: 4px 0px 4px 0px;
+}
+#calendar_big .ui-datepicker td span,
+#calendar_big .ui-datepicker td a {
+  text-align: center;
+}
+#calendar_big .ui-icon-circle-triangle-w {
+  background: url(images/left_cal.png) no-repeat 0 0;
+}
+#calendar_big .ui-icon-circle-triangle-e {
+  background: url(images/right_cal.png) no-repeat 0 0;
+}
+#calendar_big .ui-datepicker-next,
+#calendar_big .ui-datepicker-prev {
+  border: none;
+  background: none;
+  margin: 0;
+  display: inline;
+  padding: 0;
+  top: 17px;
+  right: 2px;
+}
+#calendar_big .ui-datepicker-prev {
+  left: 10px;
+}
+#calendar_big  .ui-datepicker-current-day.ui-datepicker-today {
+  background: url(images/today_fon.png) no-repeat -1px -1px;
 }
 @media print {
   * {
