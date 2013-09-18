@@ -16,12 +16,14 @@ html {
     width: 100%;
     height: 100%;
     min-height: 500px;
+    min-width: 1024px;
 }
 
 body {
     font-size: 11px;
     font-family:  Arial, Tahoma, Verdana, sans-serif;
     height: 100%;
+    min-width: 1024px;
 }
 
 ::-moz-selection {
@@ -358,84 +360,148 @@ a {
             width: 90px;
             background: url(images/leftmenu_but_bg.png) repeat-y 0 0;
 
-            ul {
+            .btn_1 i{.stitches-sprite(-5px, -5px, 40px, 40px);}
+            .btn_2 i{.stitches-sprite(-55px, -5px, 40px, 40px);}
+            .btn_3 i{.stitches-sprite(-105px, -5px, 40px, 40px);}
+            .btn_4 i{.stitches-sprite(-155px, -5px, 40px, 40px);}
+            .btn_5 i{.stitches-sprite(-5px, -55px, 40px, 40px);}
+            .btn_6 i{.stitches-sprite(-55px, -55px, 40px, 40px);}
+            .btn_7 i{.stitches-sprite(-105px, -55px, 40px, 40px);}
+            .btn_8 i{.stitches-sprite(-155px, -55px, 40px, 40px);}
+            .btn_9 i{.stitches-sprite(-5px, -105px, 40px, 40px);}
+            .btn_10 i{.stitches-sprite(-55px, -105px, 40px, 40px);}
+            .btn_11 i{.stitches-sprite(-105px, -105px, 40px, 40px);}
+            .btn_12 i{.stitches-sprite(-155px, -105px, 40px, 40px);}
+            .btn_13 i{.stitches-sprite(-5px, -155px, 40px, 40px);}
+            .btn_14 i{.stitches-sprite(-55px, -155px, 40px, 40px);}
+            .btn_15 i{.stitches-sprite(-105px, -155px, 40px, 40px);}
+            .btn_16 i{.stitches-sprite(-155px, -155px, 40px, 40px);}
+            .btn_17 i{.stitches-sprite(-205px, -5px, 40px, 40px);}
+            .btn_18 i{.stitches-sprite(-205px, -55px, 40px, 40px);}
+            .btn_19 i{.stitches-sprite(-205px, -105px, 40px, 40px);}
+            .btn_20 i{.stitches-sprite(-205px, -155px, 40px, 40px);}
+            .btn_21 i{.stitches-sprite(-5px, -205px, 40px, 40px);}
+            .btn_22 i{.stitches-sprite(-55px, -205px, 40px, 40px);}
 
-                li {
+            a {
+                font: bold 10px/12px Arial, Helvetica, sans-serif;
+                color: #6d747e;
+                text-decoration: none;
+                text-align: center;
+                display: block;
+                width: 90px;
+                padding: 45px 0 0 0;
+                height: 35px;
+                position: relative;
+                border-top:1px solid #fafafa;
+                -webkit-box-shadow: 0px -1px 0px #d4d4d4;
+                -moz-box-shadow:    0px -1px 0px #d4d4d4;
+                box-shadow:         0px -1px 0px #d4d4d4;
+
+                span {
+                    position: absolute;
+                    bottom: 0;
+                    width: 80px;
+                    left: 0;
+                    padding: 5px;
+                }
+
+                i {
+                    position: absolute;
+                    background-image: url(images/spritesheet.png);    
+                    background-repeat: no-repeat;
+                    display: block;
+                    top:5px;
+                    left: 0;
+                    right:0;
+                    margin:auto;
+                }
+            }
+
+            li {
+                &.active,&:hover {
+                    background: url(images/leftbutton_act_bg.png) no-repeat 0 0;
+
                     a {
-                        font: bold 10px/12px Arial, Helvetica, sans-serif;
-                        color: #6d747e;
-                        text-decoration: none;
-                        text-align: center;
-                        display: block;
-                        width: 90px;
-                        padding: 45px 0 0 0;
-                        height: 35px;
-                        position: relative;
-                        border-top:1px solid #fafafa;
-                        -webkit-box-shadow: 0px -1px 0px #d4d4d4;
-                        -moz-box-shadow:    0px -1px 0px #d4d4d4;
-                        box-shadow:         0px -1px 0px #d4d4d4;
-
-                        span {
-                            position: absolute;
-                            bottom: 0;
-                            width: 80px;
-                            left: 0;
-                            padding: 5px;
-                        }
-
-                        i {
-                            position: absolute;
-                            background-image: url(images/spritesheet.png);    
-                            background-repeat: no-repeat;
-                            display: block;
-                            top:5px;
-                            left: 0;
-                            right:0;
-                            margin:auto;
-                        }
-                    }
-
-                    &:first-child a {
-                        border-top:0;
+                        border:0;
                         box-shadow:none;
                         padding: 46px 0 0 0;
                     }
 
-                    &.active,&:hover {
-                        background: url(images/leftbutton_act_bg.png) no-repeat 0 0;
-
-                        a {
-                            border-top:0;
-                            box-shadow:none;
-                            padding: 46px 0 0 0;
-                        }
-
-                    }
-                    &:nth-child(1) i{.stitches-sprite(-5px, -5px, 40px, 40px);}
-                    &:nth-child(2) i{.stitches-sprite(-55px, -5px, 40px, 40px);}
-                    &:nth-child(3) i{.stitches-sprite(-105px, -5px, 40px, 40px);}
-                    &:nth-child(4) i{.stitches-sprite(-155px, -5px, 40px, 40px);}
-                    &:nth-child(5) i{.stitches-sprite(-5px, -55px, 40px, 40px);}
-                    &:nth-child(6) i{.stitches-sprite(-55px, -55px, 40px, 40px);}
-                    &:nth-child(7) i{.stitches-sprite(-105px, -55px, 40px, 40px);}
-                    &:nth-child(8) i{.stitches-sprite(-155px, -55px, 40px, 40px);}
-                    &:nth-child(9) i{.stitches-sprite(-5px, -105px, 40px, 40px);}
-                    &:nth-child(10) i{.stitches-sprite(-55px, -105px, 40px, 40px);}
-                    &:nth-child(11) i{.stitches-sprite(-105px, -105px, 40px, 40px);}
-                    &:nth-child(12) i{.stitches-sprite(-155px, -105px, 40px, 40px);}
-                    &:nth-child(13) i{.stitches-sprite(-5px, -155px, 40px, 40px);}
-                    &:nth-child(14) i{.stitches-sprite(-55px, -155px, 40px, 40px);}
-                    &:nth-child(15) i{.stitches-sprite(-105px, -155px, 40px, 40px);}
-                    &:nth-child(16) i{.stitches-sprite(-155px, -155px, 40px, 40px);}
-                    &:nth-child(17) i{.stitches-sprite(-205px, -5px, 40px, 40px);}
-                    &:nth-child(18) i{.stitches-sprite(-205px, -55px, 40px, 40px);}
-                    &:nth-child(19) i{.stitches-sprite(-205px, -105px, 40px, 40px);}
-                    &:nth-child(20) i{.stitches-sprite(-205px, -155px, 40px, 40px);}
-                    &:nth-child(21) i{.stitches-sprite(-5px, -205px, 40px, 40px);}
-                    &:nth-child(22) i{.stitches-sprite(-55px, -205px, 40px, 40px);}
                 }
             }
+
+            & > ul {
+                li {
+
+                    &:first-child a {
+                        border:0;
+                        box-shadow:none;
+                        padding: 46px 0 0 0;
+                    }
+                }
+            }
+
+            .invisible_btn {
+
+                background-image:url(images/leftmenu_but_bg.png);
+                border-bottom:1px solid #d4d4d4;
+                -webkit-box-shadow: 0px -1px 0px #d4d4d4,0px 1px 0px #fafafa;
+                -moz-box-shadow:    0px -1px 0px #d4d4d4,0px 1px 0px #fafafa;
+                box-shadow:         0px -1px 0px #d4d4d4,0px 1px 0px #fafafa;
+                z-index: 121;
+                position: relative;
+
+                span {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    top:0;
+                    left: 0;
+                    
+                    background-image:url(images/invisible_btn.png);
+                    background-repeat:no-repeat;
+                    background-position:center;
+                }
+            } // END .invisible_btn 
+
+            .invisible_container {
+                position:absolute;
+                z-index: 120;
+                background-image:url(images/leftmenu_div.png);
+                left:90px;
+                bottom:5px;
+                height: 95px;
+                padding-right: 8px;
+                border-top-right-radius: 10px;
+                border-bottom-right-radius: 10px;
+
+                ul {
+                    margin-top: 6px;
+                    li{
+                        float:left;
+
+                        a{
+                            border-bottom:1px solid #d4d4d4;
+                            -webkit-box-shadow: 0px -1px 0px #d4d4d4,0px 1px 0px #fafafa;
+                            -moz-box-shadow:    0px -1px 0px #d4d4d4,0px 1px 0px #fafafa;
+                            box-shadow:         0px -1px 0px #d4d4d4,0px 1px 0px #fafafa;
+
+                            &:hover{padding-top: 46px;}
+                        }
+
+                        &:last-child {
+                            padding-right:10px;
+                            border-top-right-radius: 10px;
+                            border-bottom-right-radius: 10px;
+                            border-right:1px solid #fafafa;
+                            -webkit-box-shadow: 1px 0px 0px #d4d4d4;
+                            -moz-box-shadow:    1px 0px 0px #d4d4d4;
+                            box-shadow:         1px 0px 0px #d4d4d4;
+                        }
+                    }
+                }
+            }// END .invisible_container
         }// END .left_menu_container
 
         .content {
