@@ -52,14 +52,18 @@ $(function(){
 		var d_w = $(this).parent().width();
 		var ul_w = $(this).parent().find('ul').width();
 		$(this).parent().find('ul').css('left', (((parseInt(ul_w) - parseInt(d_w))/2)* -1) + "px");
-		$(this).parent().find('ul').slideToggle();
+		$(this).parent().find('ul').fadeIn();
 		$('.over_way').fadeIn();
 	});
-	$('.drop_down_container ul li a').click(function(){$(this).parents('ul').slideUp();});
+	$('.drop_down_container ul li a').click(function(){
+		$(this).parents('ul').fadeOut();
+		$('.over_way').fadeOut();
+	});
 	/* END .drop_down_container*/
 	$('.over_way').click(function(){
 		$(this).fadeOut();
-		$('.select_container ul,.drop_down_container ul').slideUp();
+		$('.select_container ul').slideUp();
+		$('.drop_down_container ul').fadeOut();
 	});
 });// END document
 
