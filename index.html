@@ -10,7 +10,7 @@
         <meta name="viewport" content="width=device-width">
 
         <link rel="stylesheet" href="css/normalize.min.css">
-        <link rel="stylesheet" href="css/main.css">
+        <!-- <link rel="stylesheet" href="css/main.css"> -->
         <link rel="stylesheet/less" type="text/css" href="css/main.less">
         <script src="js/vendor/less.js" type="text/javascript"></script>
 
@@ -37,7 +37,7 @@
                 </ul>
 
                 <ul class="right_nav">
-                  <li><a href="#">ссылка</a></li>
+                  <li><a href="#">Выйти</a></li>
                  
                 </ul>
 
@@ -62,15 +62,50 @@
 
                         <ul>
                             <li><a href="#">Усманов Р. Б.</a></li>
-                            <li><a href="#">Член совета директоров</a></li>
-                            <li><a href="#">Выйти</a></li>
+                            <li class="select_container">
+                                <span>!</span>
+                                <a href="#"><span>Член совета директоров</span></a>
+
+                                <ul>
+                                    <li>Член совета директоров</li>
+                                    <li>первая ссылка </li>
+                                    <li>вторая ссылка</li>
+                                </ul>
+                            </li>
+
+
                         </ul>
                     </div><!--END .account-->
                 </div><!--END header_content-->
             </header>
 
             <section class="content_container">
-                <div class="left_menu_container"></div><!--END .left_menu_container-->
+                <div class="left_menu_container">
+                    <ul>
+                        <li><a href="#"><i></i><span>Личные сообщения</span></a></li>
+                        <li><a href="#"><i></i><span>Личные сообщения</span></a></li>
+                        <li><a href="#"><i></i><span>Личные сообщения</span></a></li>
+                        <li><a href="#"><i></i><span>Личные сообщения</span></a></li>
+                        <li class="active"><a href="#"><i></i><span>Личные сообщения</span></a></li>
+                        <li><a href="#"><i></i><span>Личные сообщения</span></a></li>
+                        <li><a href="#"><i></i><span>Личные сообщения</span></a></li>
+                        <li><a href="#"><i></i><span>Личные сообщения</span></a></li>
+                        <li><a href="#"><i></i><span>Личные сообщения</span></a></li>
+                        <li><a href="#"><i></i><span>Личные сообщения</span></a></li>
+                        <li><a href="#"><i></i><span>Личные сообщения</span></a></li>
+                        <li><a href="#"><i></i><span>Личные сообщения</span></a></li>
+                        <li><a href="#"><i></i><span>Личные сообщения</span></a></li>
+                        <li><a href="#"><i></i><span>Личные сообщения</span></a></li>
+                        <li><a href="#"><i></i><span>Личные сообщения</span></a></li>
+                        <li><a href="#"><i></i><span>Личные сообщения</span></a></li>
+                        <li><a href="#"><i></i><span>Личные сообщения</span></a></li>
+                        <li><a href="#"><i></i><span>Личные сообщения</span></a></li>
+                        <li><a href="#"><i></i><span>Личные сообщения</span></a></li>
+                        <li><a href="#"><i></i><span>Личные сообщения</span></a></li>
+                        <li><a href="#"><i></i><span>Личные сообщения</span></a></li>
+                        <li><a href="#"><i></i><span>Личные сообщения</span></a></li>
+                    </ul>
+                </div><!--END .left_menu_container-->
                 <section class="content">
                     <div>
                         <div class="header_container">
@@ -92,10 +127,55 @@
                                         <th></th>
                                         <th class="col_1">№</th>
                                         <th class="col_2">Наименование</th>
-                                        <th class="col_3"><a href="#">Участие</a></th>
-                                        <th class="col_4"><a href="#">Дата начала</a></th>
-                                        <th class="col_5"><a href="#">Дата окончания</a></th>
-                                        <th><a href="#">Статус</a></th>
+                                        <th class="col_3">
+
+                                            <div class="drop_down_container">
+                                                <a href="#">Участие</a>
+                                                <ul>
+                                                    <li><a href="#">Все</a></li>
+                                                    <li><a href="#">Выполняет</a></li>
+                                                    <li><a href="#">Отмененные</a></li>
+                                                    <li><a href="#">Завершенные</a></li>    
+                                                </ul>
+                                            </div>
+
+                                        </th>
+                                        <th class="col_4">
+
+                                            <div class="drop_down_container">
+                                                <a href="#">Дата начала</a>
+                                                <ul>
+                                                    <li><a href="#">Все</a></li>
+                                                    <li><a href="#">Выполняет</a></li>
+                                                    <li><a href="#">Отмененные</a></li>
+                                                    <li><a href="#">Завершенные</a></li>    
+                                                </ul>
+                                            </div>
+                                        </th>
+                                        <th class="col_5">
+                                        
+                                            <div class="drop_down_container">
+                                                <a href="#">Дата окончания</a>
+                                                <ul>
+                                                    <li><a href="#">Все</a></li>
+                                                    <li><a href="#">Выполняет</a></li>
+                                                    <li><a href="#">Отмененные</a></li>
+                                                    <li><a href="#">Завершенные</a></li>    
+                                                </ul>
+                                            </div>
+                                        </th>
+                                        <th>
+                                                                                
+                                            <div class="drop_down_container">
+                                                <a href="#">Статус</a>
+                                                <ul>
+                                                    <li><a href="#">Все</a></li>
+                                                    <li><a href="#">Выполняет</a></li>
+                                                    <li><a href="#">Отмененные</a></li>
+                                                    <li><a href="#">Завершенные</a></li>    
+                                                </ul>
+                                            </div>
+                                        </th>
                                         <th class="blank"></th>
                                     </tr>
                                 </thead>
@@ -106,7 +186,7 @@
                                         <tbody>
 
                                             <tr>
-                                                <td></td>
+                                                <td class="red"></td>
                                                 <td></td>
                                                 <td class="col_1">1023</td>
                                                 <td class="col_2">
@@ -122,7 +202,7 @@
                                             </tr>
 
                                             <tr>
-                                                <td></td>
+                                                <td class="blue"></td>
                                                 <td></td>
                                                 <td class="col_1">1023</td>
                                                 <td class="col_2"><a href="#" class="pop_active">Комиссия по этике ГД 20 марта</a></td>
@@ -134,7 +214,7 @@
                                             </tr>
 
                                             <tr>
-                                                <td></td>
+                                                <td class="yellow"></td>
                                                 <td></td>
                                                 <td class="col_1">1023</td>
                                                 <td class="col_2">
@@ -278,6 +358,8 @@
             </section><!--END .content_container-->
 
         </section><!--END #main-->
+
+        <div class="over_way"></div>
 
 <!--         // <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script> 
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>-->
