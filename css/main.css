@@ -45,6 +45,9 @@ textarea {
 a {
   color: #528fcc;
 }
+p {
+  margin: 0;
+}
 .orange_bg {
   background: #fcb319;
   background: -moz-linear-gradient(top,#fcb319 0%,#e87b17 100%,#2989d8 100%,#7db9e8 100%);
@@ -1979,6 +1982,35 @@ a {
 }
 .assignments_container .body_assignments_block .content_table {
   margin-top: 20px;
+}
+.calendar_nav {
+  list-style: none;
+  height: inherit;
+  padding-left: 20px;
+}
+.calendar_nav li {
+  padding-left: 20px;
+  position: relative;
+  margin: 5px 0;
+}
+.calendar_nav li:first-child span {
+  background-color: #ff9f4c;
+}
+.calendar_nav li:first-child + * span {
+  background-color: #ff7e7e;
+}
+.calendar_nav li:first-child + * + * span {
+  background-color: #a2c3e5;
+}
+.calendar_nav li:first-child + * + * + * span {
+  background-color: #afc765;
+}
+.calendar_nav li span {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: 2px;
+  left: 0;
 }
 @media print {
   * {

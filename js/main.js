@@ -103,6 +103,7 @@ $(function(){
 	$('.popap_over_way,.close').click(function(){
 		$('.popap_over_way,.popap_container').fadeOut();
 	});
+
 	/* END .papaps*/
 
 	/* .send_body*/
@@ -169,11 +170,11 @@ function tabs_right(index){
 
 function highlightDays(date) {
 	
-	var a_blue = ["1.10.2012", "5.10.2012", "10.11.2012"];
-	var a_red = ["3.10.2012", "7.12.2012"];
-	var a_orange = ["8.10.2012", "9.11.2012"];
-	var a_green	 = ["27.10.2012"];
-	var a_all = ["15.10.2012"];
+	var a_blue = ["1.9.2013", "5.9.2013", "10.9.2013"];
+	var a_red = ["3.9.2013", "7.9.2013"];
+	var a_orange = ["8.9.2013", "9.9.2013"];
+	var a_green	 = ["27.9.2013"];
+	var a_all = ["15.9.2013"];
 	
 	var str_date = date.getDate() + '.' + (date.getMonth()+1) + '.'+ date.getFullYear();
 	

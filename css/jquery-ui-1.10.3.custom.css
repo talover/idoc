@@ -54,7 +54,14 @@
 .ui-datepicker-next, #calendar_big .ui-datepicker-prev { border:none; background:none; margin:0; display:inline; padding:0; top:17px; right:2px;}
 .ui-datepicker-prev { left:10px;}
 .ui-datepicker-current-day.ui-datepicker-today { background:url(images/today_fon.png) no-repeat -1px -1px;}
-.ui-datepicker td a { padding: 7px 0;display: block;text-align: center;color:#8595a6!important; font:bold 13px/15px Arial, Helvetica, sans-serif!important;}
+.ui-datepicker td a { 
+	padding: 7px 0;
+	display: block;
+	text-align: center;
+	color:#8595a6; 
+	font:bold 13px/15px Arial, Helvetica, sans-serif;
+	text-decoration: none;
+}
 .ui-datepicker-calendar {
 	border-bottom:1px solid #d6dce3;
 }
@@ -80,4 +87,14 @@
 .ui-datepicker .ui-datepicker-prev {left: 20px!important;}
 .ui-datepicker .ui-datepicker-next {right:10px;}
 
+
+
+.mark-red a,  .mark-orange a,.mark-blue a,.mark-green a{color:#fff!important;}
+
+.mark-orange {background: #ff9f4c;}
+.mark-red {background: #ff7e7e;}
+.mark-blue {background: #a2c3e5;}
+.mark-green{background: #afc765;}
+.mark-all {background: url(images/cal_4.png) no-repeat 0 0;}
+.mark-all a {font-weight: normal!important;}
 
