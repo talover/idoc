@@ -1,11 +1,12 @@
 
 $(function(){
 	height ();
-	$('.scroll-pane').jScrollPane();
-
 	tabs_right();
+	$( ".tabs" ).tabs();
 
-	$("#calendar_big").datepicker({
+	$('.tabs_nav ').click(function(){$('.scroll-pane').jScrollPane();});
+
+	$(".calendar_big").datepicker({
 		beforeShowDay: highlightDays,
 		inline: true,
 		closeText: 'Закрыть', 
@@ -84,6 +85,53 @@ $(function(){
 		}
 	});
 	/* END .invisible_container*/
+
+	/* .papaps*/
+
+	$('.btn_container').delegate(".task_btn","click",function(){
+		$('.task_container,.popap_over_way').fadeIn();
+		$('.scroll-pane').jScrollPane();
+	});
+
+	$('.btn_container').delegate(".assignments_btn","click",function(){
+		$('.assignments_container,.popap_over_way').fadeIn();
+		$('.scroll-pane').jScrollPane();
+	});
+
+	$('.dialogue_btn').click(function(){$('.dialogue_container,.popap_over_way').fadeIn();});
+
+	$('.popap_over_way,.close').click(function(){
+		$('.popap_over_way,.popap_container').fadeOut();
+	});
+	/* END .papaps*/
+
+	/* .send_body*/
+	$('.send_body span').click(function(){$('.send_body ul').slideToggle();});
+	$('.send_body ul a').click(function(){$('.send_body ul').slideToggle();});
+	/* END .send_body*/
+
+	/* .task_accordion_btn*/	
+	$('.task_accordion_btn').click(function(){
+		$(this).toggleClass('active');
+		$(this).parent().find('.task_accordion_container').slideToggle(function(){
+			$('.scroll-pane').jScrollPane();
+		});
+	});
+	/* END .task_accordion_btn*/
+
+
+	$('input:radio').screwDefaultButtons({
+        image: 'url("css/images/radio_light-blue.png")',
+        width: 21,
+        height: 21
+    });
+    $('input:checkbox').screwDefaultButtons({
+        image: 'url("css/images/checkbox_light-blue.png")',
+        width: 25,
+        height: 24
+    });
+
+    $('.scroll-pane').jScrollPane();
 });// END document
 
 $(window).resize(function(){
@@ -94,6 +142,10 @@ $(window).resize(function(){
 function height (){
 	$('.content_container').css('height', (parseInt($('body').height()) - parseInt($('header').height())- 30)  + 'px');
 	$('.table_body').css('height', (parseInt($('.content > div').height()) - parseInt($('.header_container').height())- 55)  + 'px');
+	$('.tab_task_container').css('height',
+		parseInt($('.task_container').height()) - parseInt(85) - parseInt($('.footer_popap').height())  + 'px');
+	$('.body_assignments').css('height',
+		parseInt($('.assignments_container').height()) - parseInt(45) - parseInt($('.footer_popap').height())  + 'px');
 }
 
 function tabs_right(index){

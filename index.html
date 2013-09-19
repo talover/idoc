@@ -11,7 +11,7 @@
 
         <link rel="stylesheet" href="css/normalize.min.css">
         <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet/less" type="text/css" href="css/main.less">
+<!--         <link rel="stylesheet/less" type="text/css" href="css/main.less"> -->
         <script src="js/vendor/less.js" type="text/javascript"></script>
 
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
@@ -37,7 +37,7 @@
                 </ul>
 
                 <ul class="right_nav">
-                  <li><a href="#">Выйти</a></li>
+                  <li><a class="dialogue_btn" href="#">Выйти</a></li>
                  
                 </ul>
 
@@ -81,9 +81,9 @@
 
             <section class="content_container">
                 <div class="left_menu_container">
-                    <ul>
-                        <li class="btn_1"><a href="#"><i></i><span>Личные сообщения</span></a></li>
-                        <li class="btn_2"><a href="#"><i></i><span>Личные сообщения</span></a></li>
+                    <ul class="btn_container">
+                        <li class="btn_1"><a class="task_btn" href="#"><i></i><span>Личные сообщения</span></a></li>
+                        <li class="btn_2"><a class="assignments_btn" href="#"><i></i><span>Личные сообщения</span></a></li>
                         <li class="btn_3"><a href="#"><i></i><span>Личные сообщения</span></a></li>
                         <li class="btn_4"><a href="#"><i></i><span>Личные сообщения</span></a></li>
                         <li class="btn_5 active"><a href="#"><i></i><span>Личные сообщения</span></a></li>
@@ -92,7 +92,7 @@
 
                     <a class="invisible_btn" href="#"><span></span></a>
                     <div class="invisible_container">
-                        <ul>
+                        <ul class="btn_container">
                             <li class="btn_7"><a href="#"><i></i><span>Личные сообщения</span></a></li>
                             <li class="btn_8"><a href="#"><i></i><span>Личные сообщения</span></a></li>
                             <li class="btn_9"><a href="#"><i></i><span>Личные сообщения</span></a></li>
@@ -346,7 +346,7 @@
                         <li><a href="#tabs-3"><span>12</span></a></li>
                       </ul>
                       <div class="shadow_tab tabs-panel active">
-                        <div id="calendar_big"></div>
+                        <div class="calendar_big"></div>
                       </div>
                       <div  class="shadow_tab tabs-panel">
                         <h2>Content heading 2</h2>
@@ -362,10 +362,1065 @@
                     <a class="turn_off" href="#">Свернуть меню</a>
                 </section><!--END .right_menu-->
             </section><!--END .content_container-->
-
         </section><!--END #main-->
 
+        <div class="dialogue_container popap_container">
+          <h2 class="title_popap">Авторызация</h2>
+          <span class="close"></span> 
+          <p class="dialogue">Вы хотите сохранить внесенные изменения в структуре?</p>
+          <div class="bottom_container">
+            <p>
+              <button class="button">Да</button>
+              <button class="button">Нет</button>
+            </p>
+          </div>
+        </div><!--END .dialogue_container-->
+
+
+        <section class="task_container popap_container">
+          <h2 class="title_popap">Наименование заголовка</h2>
+          <span class="close"></span>
+          <div class="tabs">
+
+            <ul class="tabs_nav">
+              <li><a href="#tabs-1"><span></span>Задача</a></li>
+              <li><a href="#tabs-2"><span></span>Подзадачи</a></li>
+              <li><a href="#tabs-3"><span></span>По ОШС</a></li>
+              <li><a href="#tabs-4"><span></span>Маршрут</a></li>
+            </ul>
+            <div id="tabs-1">
+                <section class="tab_task_container">
+                    <div class="scroll-pane">
+                      <a class="link_main_task" href="#">Ссылка на основную задачу (видна только, если эта задача - подзадача другой задачи)</a>
+                      <p class="name_task">Наименование задачи</p>
+                      <h3>Описание задачи</h3>
+
+                      <div class="description_task">
+                        <div class="scroll-pane">
+
+                          <div class="task">
+                            <a  href="#">Первичная постановка задачи в 100 символов... (нажмите, чтобы увидеть целиком)</a>
+                          </div>
+
+                          <div class="task second_task">
+                            <a  href="#">Васильев А.А., <span>Руководитель (02/05/2012 - 18:40)</span></a><br />
+                            <a class="last_link"  href="#">Начало текста в 100 символов... (нажмите, чтобы увидеть целиком)</a>
+                          </div>
+
+                          <div class="task second_task">
+                            <a  href="#">Васильев А.А., <span>Руководитель (02/05/2012 - 18:40)</span></a><br />
+                            <a class="last_link"  href="#">Начало текста в 100 символов... (нажмите, чтобы увидеть целиком)</a>
+                          </div>
+
+                          <div class="task second_task">
+                            <a  href="#">Васильев А.А., <span>Руководитель (02/05/2012 - 18:40)</span></a><br />
+                            <a class="last_link"  href="#">Начало текста в 100 символов... (нажмите, чтобы увидеть целиком)</a>
+                          </div>
+
+                          <div class="task third_task">
+                            <a  href="#">Васильев А.А., <span>Руководитель (02/05/2012 - 18:40)</span></a><br />
+                            <a class="last_link"  href="#">Начало текста в 100 символов... (нажмите, чтобы увидеть целиком)</a>
+                          </div>
+
+                          <div class="task third_task">
+                            <a  href="#">Васильев А.А., <span>Руководитель (02/05/2012 - 18:40)</span></a><br />
+                            <a class="last_link"  href="#">Начало текста в 100 символов... (нажмите, чтобы увидеть целиком)</a>
+                          </div>
+
+                          <div class="task third_task">
+                            <a  href="#">Васильев А.А., <span>Руководитель (02/05/2012 - 18:40)</span></a><br />
+                            <a class="last_link"  href="#">Начало текста в 100 символов... (нажмите, чтобы увидеть целиком)</a>
+                          </div>
+
+                          <div class="task fourth_task">
+                            <a  href="#">Васильев А.А., <span>Руководитель (02/05/2012 - 18:40)</span></a><br />
+                            <a class="last_link"  href="#">Начало текста в 100 символов... (нажмите, чтобы увидеть целиком)</a>
+                          </div>
+
+                          <div class="task fourth_task">
+                            <a  href="#">Васильев А.А., <span>Руководитель (02/05/2012 - 18:40)</span></a><br />
+                            <a class="last_link"  href="#">Начало текста в 100 символов... (нажмите, чтобы увидеть целиком)</a>
+                          </div>
+
+                          <div class="task fourth_task">
+                            <a  href="#">Васильев А.А., <span>Руководитель (02/05/2012 - 18:40)</span></a><br />
+                            <a class="last_link"  href="#">Начало текста в 100 символов... (нажмите, чтобы увидеть целиком)</a>
+                          </div>
+                        </div>
+                      </div><!--END .description_task-->
+
+                      <div class="send_container">
+                        <textarea placeholder="Введите текст"></textarea>
+                        <div class="send_body">
+                          <button>Отправить</button>
+                          <span></span>
+
+                          <ul>
+                            <li><a href="#">первая</a></li>
+                            <li><a href="#">вторая</a></li>
+                            <li><a href="#">третья</a></li>
+                          </ul>
+                        </div>
+                      </div>
+
+                      <div class="list_subdocuments task_accordion">
+                        <a class="task_accordion_btn active" href="#">Список вложенных документов<span></span></a>
+                        <div class="task_accordion_container">
+                          <table class="content_table task_table">
+                            <thead>
+                              <tr>
+                                <th>№ <p>п/п</p></th>
+                                <th>Наименование документа</th>
+                                <th>Вложено (кем и когда)</th>
+                                <th></th>
+                              </tr>
+                            </thead>
+                            <tbody>
+
+                              <tr>
+                                <td>1</td>
+                                <td>Приказ №1237859-ОЗ-ЧП</td>
+                                <td><b>Иванов И.И.</b> (12.12.2012 - 18:00)</td>
+                                <td class="dump"><div><span></span></div></td>
+                              </tr>
+
+                              <tr>
+                                <td>2</td>
+                                <td>Протокол от 12.10.2012 (№58969)</td>
+                                <td><b>Остапчук Н.В.</b> (12.12.2012 - 18:00)</td>
+                                <td class="dump"><div><span></span></div></td>
+                              </tr>
+                                                        
+                              <tr>
+                                <td>3</td>
+                                <td>Отчет №8937859-ОЖ-ЧП</td>
+                                <td><b>Никифоров.</b> Г.П. (12.12.2012 - 18:00)</td>
+                                <td class="dump"><div><span></span></div></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div><!--END .list_subdocuments-->
+
+                      <div class="create_document_container popap_container">
+                        <div class="header_create_document">
+                          <div>
+                            <div class="file_container">
+                              <input type="file"  />
+                              <button>Вложить документ</button>
+                            </div>
+                          </div>
+
+                          <button>Создать документ по шаблону</button>
+                        </div>
+
+                        <ul>
+                          <li>
+                            <div>Ответственный:</div>
+                            <div>Срок исполнения задачи:</div>
+                          </li>
+
+                          <li>
+                            <div class="responsible"><input type="text" /></div>
+                            <div class="right"><p class="date_container">Момент начала: <input type="text" class="calendar_big" value="11.09.2013" /><span></span></p></div>
+                          </li>
+
+                          <li>
+                            <div></div>
+                            <div><p class="date_container">Момент завершения: <input type="text" class="calendar_big" value="11.09.2013" /><span></span></p></div>
+                          </li>
+                        </ul>
+                      </div><!--END .create_document_container-->
+
+                      <div class="task_accordion">
+                        <a class="task_accordion_btn active" href="#">Список вложенных документов<span></span></a>
+                        <div class="task_accordion_container">
+
+                          <ul class="advanced_list">
+                            <li>Задача:</li>
+                            <li>
+                              <input type="checkbox"  id="ex2_a">
+                              <label for="ex2_a">Конфеденциальная</label>
+                              
+                              <input type="checkbox"  id="ex2_b">
+                              <label for="ex2_b">Срочная</label>
+                            </li>
+                          </ul>
+
+                          <ul class="advanced_list">
+                            <li>Приоритет:</li>
+                            <li>
+                              <input type="radio" name="ex1" id="ex1_a">
+                              <label for="ex1_a">Высокий</label>
+                              
+                              <input type="radio" name="ex1" id="ex1_b">
+                              <label for="ex1_b">Средний</label>
+                              
+                              <input type="radio" name="ex1" id="ex1_c">
+                              <label for="ex1_c">Низкий</label>
+                            </li>
+                          </ul>
+
+                          <ul class="advanced_list">
+                            <li>От имени кого создается задача:</li>
+                            <li><p class="users_container"><input type="text" value="Макаренко С.Г. Младший юрист" /><span></span></p></li>
+                          </ul>
+
+                          <ul class="observers advanced_list">
+                            <li>Наблюдатели:</li>
+                            <li><p class="users_container"><input type="text" value="Макаренко С.Г. Младший юрист" /><span></span></p></li>
+                          </ul>
+                        </div>
+                      </div><!--END .advanced_options-->
+                    </div>
+                </section><!--END .tab_task_container-->
+                <div class="footer_popap">
+                            <ul>
+
+                              <li class="mail">
+                                <div></div>
+                                Отправить /<br/>Сохранить
+
+
+                                <ul>
+                                  <li><a href="#">Согласовать</a></li>
+                                  <li><a href="#">Отклонить</a></li>
+                                </ul>
+                              </li>
+
+
+                              <li class="approbation">
+                                <div></div>
+                                Одобрить и отклонить
+
+
+                                <ul>
+                                  <li><a href="#">Согласовать</a></li>
+                                  <li><a href="#">Отклонить</a></li>
+                                </ul>
+                              </li>
+
+                              <li class="separate_opinion">
+                                <div></div>
+                                Высказать особое мнение
+
+                                <ul>
+                                  <li><a href="#">Согласовать</a></li>
+                                  <li><a href="#">Отклонить</a></li>
+                                </ul>
+                              </li>
+
+                              <li class="play">
+                                <div></div>
+                                Выполнить
+
+                                <ul>
+                                  <li><a href="#">Согласовать</a></li>
+                                  <li><a href="#">Отклонить</a></li>
+                                </ul>
+                              </li>
+
+                              <li class="create_task">
+                                <div></div>
+                                Создать подзадачу
+
+                                <ul>
+                                  <li><a href="#">Согласовать</a></li>
+                                  <li><a href="#">Отклонить</a></li>
+                                </ul>
+                              </li>
+
+                              <li class="close_task">
+                                <div></div>
+                                Закрыть<br/> задачу
+
+                                <ul>
+                                  <li><a href="#">Согласовать</a></li>
+                                  <li><a href="#">Отклонить</a></li>
+                                </ul>
+                              </li>
+
+                              <li class="cancel_tasks">
+                                <div></div>
+                                Отменить<br/> задачи
+
+                                <ul>
+                                  <li><a href="#">Согласовать</a></li>
+                                  <li><a href="#">Отклонить</a></li>
+                                </ul>
+                              </li>
+
+                              <li class="pause_task">
+                                <div></div>
+                                Приостановить и<br/> возобновить задачу
+
+                                <ul>
+                                  <li><a href="#">Согласовать</a></li>
+                                  <li><a href="#">Отклонить</a></li>
+                                </ul>
+                              </li>
+
+                              <li class="re-route">
+                                <div></div>
+                                Изменить маршрут
+
+                                <ul>
+                                  <li><a href="#">Согласовать</a></li>
+                                  <li><a href="#">Отклонить</a></li>
+                                </ul>
+                              </li>
+
+                              <li class="cancel_task">
+                                <div></div>
+                                Отклонить задачу
+
+                                <ul>
+                                  <li><a href="#">Согласовать</a></li>
+                                  <li><a href="#">Отклонить</a></li>
+                                </ul>
+                              </li>
+
+                              <li class="closed">
+                                <div></div>
+                                Закрыть<br/> форму
+
+                                <ul>
+                                  <li><a href="#">Согласовать</a></li>
+                                  <li><a href="#">Отклонить</a></li>
+                                </ul>
+                              </li>
+                            </ul>
+                </div>
+            </div>
+            <div id="tabs-2">
+            2
+            </div>
+            <div id="tabs-3">
+            3
+            </div>
+
+            <div id="tabs-4">
+                    
+                <section class="tab_task_container">
+                    <div class="scroll-pane">
+                      <div class="route_tasks task_accordion">
+                        <a class="task_accordion_btn active" href="#">Маршрут прохождения задачи<span></span></a>
+                        <div class="task_accordion_container">                     
+                          <table class="content_table task_table route_tasks_table">
+                            <thead>
+                              <tr>
+                                <th>Вкл.</th>
+                                <th>Статус лица</th>
+                                <th class="center">II</th>
+                                <th>ФИО / Должность</th>
+                                <th>Функции</th>
+                                <th>Срок исполнения</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+
+                              <tr>
+                                <td><input type="checkbox"  id="ex2_b"></td>
+                                <td>Руководитель</td>
+                                <td><input type="checkbox"  id="ex2_b"></td>
+                                <td>  
+                                  <div>
+                                    <p class="bold">Иванов И.И.</p>
+                                    <p>(Генеральный директор)</p>
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="for_pen">
+                                    <span class="pen"></span>
+                                    Постановка задачи
+                                  </div>
+                                </td>
+                                <td>                         
+                                  <div>
+                                    <p class="bold">23.05.2013</p>
+                                    <p>(17:00 по МСК)</p>
+                                  </div>
+                                </td>
+                              </tr>
+
+                              <tr>
+                                <td><input type="checkbox"  id="ex2_b"></td>
+                                <td>Руководитель</td>
+                                <td><input type="checkbox"  id="ex2_b"></td>
+                                <td>  
+                                  <div class="for_link for_pen">
+                                    <span class="link"></span>
+                                    <span class="pen"></span>
+                                    <p><span>Сидоров Г.Д.</span> (Глава юр. отд.);</p>
+                                    <p><span>Попов В.В.</span> (Глава юр. отд.)</p>
+                                  </div>
+                                </td>
+                                <td>
+                                  <div>
+                                    Постановка задачи
+                                  </div>
+                                </td>
+                                <td>                         
+                                  <div class="for_pen">
+                                    <span class="pen"></span>
+                                    <p class="bold">23.05.2013</p>
+                                    <p>(17:00 по МСК)</p>
+                                  </div>
+                                </td>
+                              </tr>
+
+                              <tr>
+                                <td><input type="checkbox"  id="ex2_b"></td>
+                                <td>Руководитель</td>
+                                <td><input type="checkbox"  id="ex2_b"></td>
+                                <td>  
+                                  <div class="for_link for_pen">
+                                    <span class="link"></span>
+                                    <span class="pen"></span>
+                                    <p><span>Сидоров Г.Д.</span> (Глава юр. отд.);</p>
+                                    <p><span>Попов В.В.</span> (Глава юр. отд.)</p>
+                                  </div>
+                                </td>
+                                <td>
+                                  <div>
+                                   Выполнение; согласование и отклонение; координация; особое мнение 
+                                  </div>
+                                </td>
+                                <td>                         
+                                  <div>
+                                    <span class="pen for_pen"></span>
+                                    <p class="bold">23.05.2013</p>
+                                    <p>(17:00 по МСК)</p>
+                                  </div>
+                                </td>
+                              </tr>
+
+
+                              <tr>
+                                <td><input type="checkbox"  id="ex2_b"></td>
+                                <td>Руководитель</td>
+                                <td><input type="checkbox"  id="ex2_b"></td>
+                                <td>  
+                                  <div class="for_link for_pen">
+                                    <span class="link"></span>
+                                    <span class="pen"></span>
+                                    <p><span>Сидоров Г.Д.</span> (Глава юр. отд.);</p>
+                                    <p><span>Попов В.В.</span> (Глава юр. отд.)</p>
+                                  </div>
+                                </td>
+                                <td class="center">
+                                  <div>
+                                   -
+                                  </div>
+                                </td>
+                                <td>                         
+                                  <div class="for_pen">
+                                    <span class="pen"></span>
+                                    <p class="bold">23.05.2013</p>
+                                    <p>(17:00 по МСК)</p>
+                                  </div>
+                                </td>
+                              </tr>
+
+                              <tr>
+                                <td><input type="checkbox"  id="ex2_b"></td>
+                                <td>Руководитель</td>
+                                <td><input type="checkbox"  id="ex2_b"></td>
+                                <td class="center">  
+                                  <div>
+                                  -
+                                  </div>
+                                </td>
+                                <td>
+                                  <div>
+                                   Выполнение; подпись
+                                  </div>
+                                </td>
+                                <td>                         
+                                  <div class="for_pen">
+                                    <span class="pen"></span>
+                                    <p class="bold">23.05.2013</p>
+                                    <p>(17:00 по МСК)</p>
+                                  </div>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div><!--END .route tasks-->
+
+                      <div class="route_document task_accordion">
+                        <a class="task_accordion_btn active" href="#">Маршрут прохождения документов<span></span></a>
+                        <div class="task_accordion_container">
+                        
+                          <table class="content_table task_table route_tasks_table">
+                            <thead>
+                              <tr>
+                                <th>Наимен.</th>
+                                <th>Статус лица</th>
+                                <th>ФИО / Должность</th>
+                                <th>Составлено</th>
+                                <th>Одобрено</th>
+                                <th>Согласовано</th>
+                                <th>Подписано</th>
+                                <th>Утверждено</th>
+                                <th>Особое мнение</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+
+                              <tr>
+                                <td>Документ</td>
+                                <td>Исполнитель</td>
+                                <td>
+                                  <div>
+                                  <div>
+                                    <p class="bold">Иванов И.И.</p>
+                                    <p>(Генеральный директор)</p>
+                                  </div>
+                                  </div>
+                                </td>
+                                <td>                            
+                                  <div>
+                                    <p class="bold">23.05.2013</p>
+                                    <p>(17:00 по МСК)</p>
+                                  </div>
+                                </td>
+                                <td>                          
+                                  <div>
+                                    <p class="bold">23.05.2013</p>
+                                    <p>(17:00 по МСК)</p>
+                                  </div>
+                                </td>
+                                <td>                          
+                                  <div>
+                                    <p class="bold">23.05.2013</p>
+                                    <p>(17:00 по МСК)</p>
+                                  </div>
+                                </td>
+                                <td>                        
+                                  <div>
+                                    <p class="bold">23.05.2013</p>
+                                    <p>(17:00 по МСК)</p>
+                                  </div>
+                                </td>
+                                <td>
+                                  <div>
+                                    <p class="bold">23.05.2013</p>
+                                    <p>(17:00 по МСК)</p>
+                                  </div>
+                                </td>
+                                <td class="center">см</td>
+                              </tr>
+
+                              <tr>
+                                <td>Документ</td>
+                                <td>Исполнитель</td>
+                                <td>
+                                  <div>
+                                  <div>
+                                    <p class="bold">Иванов И.И.</p>
+                                    <p>(Генеральный директор)</p>
+                                  </div>
+                                  </div>
+                                </td>
+                                <td>                            
+                                  <div>
+                                    <p class="bold">23.05.2013</p>
+                                    <p>(17:00 по МСК)</p>
+                                  </div>
+                                </td>
+                                <td>                          
+                                  <div>
+                                    <p class="bold">23.05.2013</p>
+                                    <p>(17:00 по МСК)</p>
+                                  </div>
+                                </td>
+                                <td>                          
+                                  <div>
+                                    <p class="bold">23.05.2013</p>
+                                    <p>(17:00 по МСК)</p>
+                                  </div>
+                                </td>
+                                <td>                        
+                                  <div>
+                                    <p class="bold">23.05.2013</p>
+                                    <p>(17:00 по МСК)</p>
+                                  </div>
+                                </td>
+                                <td>
+                                  <div>
+                                    <p class="bold">23.05.2013</p>
+                                    <p>(17:00 по МСК)</p>
+                                  </div>
+                                </td>
+                                <td class="center">см</td>
+                              </tr>
+
+                              <tr>
+                                <td>Документ</td>
+                                <td>Исполнитель</td>
+                                <td>
+                                  <div>
+                                  <div>
+                                    <p class="bold">Иванов И.И.</p>
+                                    <p>(Генеральный директор)</p>
+                                  </div>
+                                  </div>
+                                </td>
+                                <td>                            
+                                  <div>
+                                    <p class="bold">23.05.2013</p>
+                                    <p>(17:00 по МСК)</p>
+                                  </div>
+                                </td>
+                                <td>                          
+                                  <div>
+                                    <p class="bold">23.05.2013</p>
+                                    <p>(17:00 по МСК)</p>
+                                  </div>
+                                </td>
+                                <td>                          
+                                  <div>
+                                    <p class="bold">23.05.2013</p>
+                                    <p>(17:00 по МСК)</p>
+                                  </div>
+                                </td>
+                                <td>                        
+                                  <div>
+                                    <p class="bold">23.05.2013</p>
+                                    <p>(17:00 по МСК)</p>
+                                  </div>
+                                </td>
+                                <td>
+                                  <div>
+                                    <p class="bold">23.05.2013</p>
+                                    <p>(17:00 по МСК)</p>
+                                  </div>
+                                </td>
+                                <td class="center">см</td>
+                              </tr>
+
+                              <tr>
+                                <td>Документ</td>
+                                <td>Исполнитель</td>
+                                <td>
+                                  <div>
+                                  <div>
+                                    <p class="bold">Иванов И.И.</p>
+                                    <p>(Генеральный директор)</p>
+                                  </div>
+                                  </div>
+                                </td>
+                                <td>                            
+                                  <div>
+                                    <p class="bold">23.05.2013</p>
+                                    <p>(17:00 по МСК)</p>
+                                  </div>
+                                </td>
+                                <td>                          
+                                  <div>
+                                    <p class="bold">23.05.2013</p>
+                                    <p>(17:00 по МСК)</p>
+                                  </div>
+                                </td>
+                                <td>                          
+                                  <div>
+                                    <p class="bold">23.05.2013</p>
+                                    <p>(17:00 по МСК)</p>
+                                  </div>
+                                </td>
+                                <td>                        
+                                  <div>
+                                    <p class="bold">23.05.2013</p>
+                                    <p>(17:00 по МСК)</p>
+                                  </div>
+                                </td>
+                                <td>
+                                  <div>
+                                    <p class="bold">23.05.2013</p>
+                                    <p>(17:00 по МСК)</p>
+                                  </div>
+                                </td>
+                                <td class="center">см</td>
+                              </tr>
+
+                              <tr>
+                                <td>Документ</td>
+                                <td>Исполнитель</td>
+                                <td>
+                                  <div>
+                                  <div>
+                                    <p class="bold">Иванов И.И.</p>
+                                    <p>(Генеральный директор)</p>
+                                  </div>
+                                  </div>
+                                </td>
+                                <td>                            
+                                  <div>
+                                    <p class="bold">23.05.2013</p>
+                                    <p>(17:00 по МСК)</p>
+                                  </div>
+                                </td>
+                                <td>                          
+                                  <div>
+                                    <p class="bold">23.05.2013</p>
+                                    <p>(17:00 по МСК)</p>
+                                  </div>
+                                </td>
+                                <td>                          
+                                  <div>
+                                    <p class="bold">23.05.2013</p>
+                                    <p>(17:00 по МСК)</p>
+                                  </div>
+                                </td>
+                                <td>                        
+                                  <div>
+                                    <p class="bold">23.05.2013</p>
+                                    <p>(17:00 по МСК)</p>
+                                  </div>
+                                </td>
+                                <td>
+                                  <div>
+                                    <p class="bold">23.05.2013</p>
+                                    <p>(17:00 по МСК)</p>
+                                  </div>
+                                </td>
+                                <td class="center">-</td>
+                              </tr>
+
+                            </tbody>
+                          </table>
+                        </div>
+                      </div><!--END .advanced_options-->
+                    </div>
+                </section><!--END .tab_task_container-->
+
+                <div class="footer_popap">
+                    <ul>
+
+                      <li class="signing">
+                        <div></div>
+                        Подписание
+
+                        <ul>
+                          <li><a href="#">Согласовать</a></li>
+                          <li><a href="#">Отклонить</a></li>
+                        </ul>
+                      </li>
+
+                      <li class="send">
+                        <div></div>
+                        Отправить
+
+                        <ul>
+                          <li><a href="#">Согласовать</a></li>
+                          <li><a href="#">Отклонить</a></li>
+                        </ul>
+                      </li>
+
+                      <li class="vote">
+                        <div></div>
+                        Голосование
+
+                        <ul>
+                          <li><a href="#">Согласовать</a></li>
+                          <li><a href="#">Отклонить</a></li>
+                        </ul>
+                      </li>
+
+                      <li class="reconcile">
+                        <div></div>
+                        Согласовать
+
+                        <ul>
+                          <li><a href="#">Согласовать</a></li>
+                          <li><a href="#">Отклонить</a></li>
+                        </ul>
+                      </li>
+
+                      <li class="approval">
+                        <div></div>
+                        Утверждение
+
+                        <ul>
+                          <li><a href="#">Согласовать</a></li>
+                          <li><a href="#">Отклонить</a></li>
+                        </ul>
+                      </li>
+
+                      <li class="approbation">
+                        <div></div>
+                        Одобрение
+
+                        <ul>
+                          <li><a href="#">Согласовать</a></li>
+                          <li><a href="#">Отклонить</a></li>
+                        </ul>
+                      </li>
+
+                      <li class="separate_opinion">
+                        <div></div>
+                        Особое мнение
+
+                        <ul>
+                          <li><a href="#">Согласовать</a></li>
+                          <li><a href="#">Отклонить</a></li>
+                        </ul>
+                      </li>
+
+                      <li class="print">
+                        <div></div>
+                        Печать
+
+                        <ul>
+                          <li><a href="#">Согласовать</a></li>
+                          <li><a href="#">Отклонить</a></li>
+                        </ul>
+                      </li>
+
+                      <li class="save">
+                        <div></div>
+                       Сохраниеть как черновик
+
+                        <ul>
+                          <li><a href="#">Согласовать</a></li>
+                          <li><a href="#">Отклонить</a></li>
+                        </ul>
+                      </li>
+
+                      <li class="closed">
+                        <div></div>
+                        Закрыть
+
+                        <ul>
+                          <li><a href="#">Согласовать</a></li>
+                          <li><a href="#">Отклонить</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                </div>
+            </div>
+          </div>
+        </section><!--END .task_container-->
+
+        <section class="assignments_container popap_container">
+            <h2 class="title_popap">Наименование заголовка</h2>
+            <span class="close"></span>
+
+            <div class="body_assignments">
+                <div class="scroll-pane">
+                    <div class="create_document_container assignments">
+                      <ul>
+                        <li>
+                          <div>Срок исполнения:</div>
+                        </li>
+
+                        <li>
+                          <div><p class="date_container"><input type="text" class="calendar_big" value="11.09.2013" /><span></span></p></div>
+                        </li>
+                      </ul>
+                    </div><!--END .create_document_container-->
+
+                    <div class="initiated">
+                      <p>Инициировано: <a href="#">Иванов И.И.</a></p>
+                    </div><!--END .initiated-->
+
+                    <ul class="advanced_list">
+                      <li>Ответственный:</li>
+                      <li><p class="users_container"><input type="text" value="Макаренко С.Г. Младший юрист" /><span></span></p></li>
+                    </ul>
+
+                    <ul class="advanced_list">
+                      <li>Исполнитель:</li>
+                      <li><p class="users_container"><input type="text" value="Макаренко С.Г. Младший юрист" /><span></span></p></li>
+                    </ul>
+
+                    <div class="description_task">
+                      <div class="scroll-pane">
+
+                        <div class="task">
+                          <a  href="#">Первичная постановка задачи в 100 символов... (нажмите, чтобы увидеть целиком)</a>
+                        </div>
+
+                        <div class="task second_task">
+                          <a  href="#">Васильев А.А., <span>Руководитель (02/05/2012 - 18:40)</span></a><br />
+                          <a class="last_link"  href="#">Начало текста в 100 символов... (нажмите, чтобы увидеть целиком)</a>
+                        </div>
+
+                        <div class="task second_task">
+                          <a  href="#">Васильев А.А., <span>Руководитель (02/05/2012 - 18:40)</span></a><br />
+                          <a class="last_link"  href="#">Начало текста в 100 символов... (нажмите, чтобы увидеть целиком)</a>
+                        </div>
+
+                        <div class="task second_task">
+                          <a  href="#">Васильев А.А., <span>Руководитель (02/05/2012 - 18:40)</span></a><br />
+                          <a class="last_link"  href="#">Начало текста в 100 символов... (нажмите, чтобы увидеть целиком)</a>
+                        </div>
+
+                        <div class="task third_task">
+                          <a  href="#">Васильев А.А., <span>Руководитель (02/05/2012 - 18:40)</span></a><br />
+                          <a class="last_link"  href="#">Начало текста в 100 символов... (нажмите, чтобы увидеть целиком)</a>
+                        </div>
+
+                        <div class="task third_task">
+                          <a  href="#">Васильев А.А., <span>Руководитель (02/05/2012 - 18:40)</span></a><br />
+                          <a class="last_link"  href="#">Начало текста в 100 символов... (нажмите, чтобы увидеть целиком)</a>
+                        </div>
+
+                        <div class="task third_task">
+                          <a  href="#">Васильев А.А., <span>Руководитель (02/05/2012 - 18:40)</span></a><br />
+                          <a class="last_link"  href="#">Начало текста в 100 символов... (нажмите, чтобы увидеть целиком)</a>
+                        </div>
+
+                        <div class="task fourth_task">
+                          <a  href="#">Васильев А.А., <span>Руководитель (02/05/2012 - 18:40)</span></a><br />
+                          <a class="last_link"  href="#">Начало текста в 100 символов... (нажмите, чтобы увидеть целиком)</a>
+                        </div>
+
+                        <div class="task fourth_task">
+                          <a  href="#">Васильев А.А., <span>Руководитель (02/05/2012 - 18:40)</span></a><br />
+                          <a class="last_link"  href="#">Начало текста в 100 символов... (нажмите, чтобы увидеть целиком)</a>
+                        </div>
+
+                        <div class="task fourth_task">
+                          <a  href="#">Васильев А.А., <span>Руководитель (02/05/2012 - 18:40)</span></a><br />
+                          <a class="last_link"  href="#">Начало текста в 100 символов... (нажмите, чтобы увидеть целиком)</a>
+                        </div>
+                      </div>
+                    </div><!--END .description_task-->
+
+                    <div class="send_container">
+                      <textarea placeholder="Введите текст"></textarea>
+                      <div class="send_body">
+                        <button>Отправить</button>
+                        <span></span>
+
+                        <ul>
+                          <li><a href="#">первая</a></li>
+                          <li><a href="#">вторая</a></li>
+                          <li><a href="#">третья</a></li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div class="body_assignments_block">      
+                      <table class="content_table task_table ">
+                        <thead>
+                          <tr>
+                            <th>№ <p>п/п</p></th>
+                            <th>Наименование документа</th>
+                            <th>Статус документа</th>
+                          </tr>
+                        </thead>
+
+                        <tbody>
+                          <tr>
+                            <td>1</td>
+                            <td class="bold">Приказ №1237859-ОЗ-ЧП</td>
+                            <td>Проект документа (Проект одобрен)</td>
+                          </tr>
+
+                          <tr>
+                            <td>2</td>
+                            <td class="bold">Протокол от 12.10.2012 (№58969)</td>
+                            <td>Документ подписан</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+
+                    <div class="list_subdocuments task_accordion">
+                      <a class="task_accordion_btn active" href="#">Список вложенных документов<span></span></a>
+                      <div class="task_accordion_container">
+                        <table class="content_table task_table">
+                          <thead>
+                            <tr>
+                              <th>№ <p>п/п</p></th>
+                              <th>Наименование документа</th>
+                              <th>Вложено (кем и когда)</th>
+                              <th></th>
+                            </tr>
+                          </thead>
+                          <tbody>
+
+                            <tr>
+                              <td>1</td>
+                              <td>Приказ №1237859-ОЗ-ЧП</td>
+                              <td><b>Иванов И.И.</b> (12.12.2012 - 18:00)</td>
+                              <td class="dump"><div><span></span></div></td>
+                            </tr>
+
+                            <tr>
+                              <td>2</td>
+                              <td>Протокол от 12.10.2012 (№58969)</td>
+                              <td><b>Остапчук Н.В.</b> (12.12.2012 - 18:00)</td>
+                              <td class="dump"><div><span></span></div></td>
+                            </tr>
+                                                      
+                            <tr>
+                              <td>3</td>
+                              <td>Отчет №8937859-ОЖ-ЧП</td>
+                              <td><b>Никифоров.</b> Г.П. (12.12.2012 - 18:00)</td>
+                              <td class="dump"><div><span></span></div></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div><!--END .list_subdocuments-->
+
+                    <div class="create_document_container">
+                      <div class="header_create_document">
+                        <div>
+                          <div class="file_container">
+                            <input type="file"  />
+                            <button>Вложить документ</button>
+                          </div>
+                        </div>
+
+                        <button>Создать документ по шаблону</button>
+                      </div>
+                    </div><!--END .create_document_container-->
+                </div>
+            </div><!--END .body_assignments-->
+            <div class="footer_popap">
+                <ul>
+                  <li class="approbation">
+                    <div></div>
+                    Выполнить
+
+                    <ul>
+                      <li><a href="#">Согласовать</a></li>
+                      <li><a href="#">Отклонить</a></li>
+                    </ul>
+                  </li>
+
+                  <li class="closed">
+                    <div></div>
+                    Отклонить
+
+                    <ul>
+                      <li><a href="#">Согласовать</a></li>
+                      <li><a href="#">Отклонить</a></li>
+                    </ul>
+                  </li>
+
+                  <li class="other">
+                    <div></div>
+                    Иное
+
+                    <ul>
+                      <li><a href="#">Согласовать</a></li>
+                      <li><a href="#">Отклонить</a></li>
+                    </ul>
+                  </li>
+                </ul>
+            </div>
+        </section><!--END .assignments_container-->
+
         <div class="over_way"></div>
+
+        <div class="popap_over_way"></div>
 
 <!--         // <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script> 
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>-->
@@ -373,6 +1428,7 @@
         <script type="text/javascript" src="js/vendor/jquery.mousewheel.js"></script>
         <script type="text/javascript" src="js/vendor/jquery.jscrollpane.min.js"></script>
         <script type="text/javascript" src="js/vendor/jquery-ui-1.10.3.custom.min.js"></script>
+        <script type="text/javascript" src="js/vendor/jquery.screwdefaultbuttonsV2.min.js"></script>
         <script src="js/main.js"></script>
 
         <script>
